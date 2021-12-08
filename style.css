@@ -125,6 +125,7 @@ img {
 
 footer p {
   color: var(--gray);
+  font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -139,7 +140,6 @@ footer p {
     width: 40%;
   }
   .logo {
-    margin-top: unset;
   }
 
   .title {
@@ -148,5 +148,8 @@ footer p {
   .text {
     font-size: 18px;
     margin-bottom: 2rem;
+  }
+  footer p {
+    font-size: 16px;
   }
 }
