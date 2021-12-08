@@ -36,6 +36,7 @@ img {
 
 .logo {
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .title {
@@ -103,7 +104,7 @@ img {
   display: flex;
   justify-content: space-between;
   width: 150px;
-  margin: 5rem auto 2rem;
+  margin: 3rem auto 1rem;
 }
 
 .social__icon {
@@ -118,4 +119,34 @@ img {
 }
 
 .social__icon i {
+  align-self: center;
+  color: var(--blue);
+}
+
+footer p {
+  color: var(--gray);
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    flex-direction: row;
+    width: 100%;
+  }
+  .form input {
+    width: 100%;
+  }
+  .form input[type="submit"] {
+    width: 40%;
+  }
+  .logo {
+    margin-top: unset;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+  .text {
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
 }
