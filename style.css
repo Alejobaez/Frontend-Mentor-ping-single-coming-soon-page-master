@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;0,700;1,300&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 320px;
+  max-width: 640px;
+  font-family: "Libre Franklin", sans-serif;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: var(--gray);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.title span {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--very-dark-blue);
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  max-width: 600px;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 375px) {
+  .form {
+    min-width: 320px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .form {
+    min-width: 300px;
+  }
+}
+
+.form input {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.6rem;
+
+  border-radius: 2rem;
+}
+.form input[type="email"] {
+  border: 1px solid var(--pale-blue);
+}
+.form input[type="submit"] {
+  background-color: var(--blue);
+  color: white;
+  font-weight: 700px;
+  box-shadow: 0 5px 10px var(--pale-blue);
+}
+
+::placeholder {
+  padding-left: 1rem;
+  color: var(--pale-blue);
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 5rem auto 2rem;
+}
+
+.social__icon {
+  border-radius: 50%;
+  border: 1px solid var(--pale-blue);
+  width: 40px;
+
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon i {
+}
